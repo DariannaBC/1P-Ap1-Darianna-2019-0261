@@ -41,21 +41,21 @@
 
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
-                <Button x:Name="NuevoButton" Height="70" Width="70" Margin="15,0" Click="NuevoButton_Click" VerticalContentAlignment="Bottom" VerticalAlignment="Top">
+                <Button x:Name="NuevoButton" Height="70" Width="70" Margin="15,0" Click="Nuevobutton_Click" VerticalContentAlignment="Bottom" VerticalAlignment="Top">
                     <StackPanel Orientation="Vertical">
                         <Image Source="/UI/nue.jpg" Stretch="None" />
                         <Label Content="Nuevo"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="GuardarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="GuardarButton_Click">
+                <Button x:Name="GuardarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Guardarbutton_Click" >
                     <StackPanel Orientation="Vertical">
                         <Image Source="/UI/guar.jpg" Stretch="None" />
                         <Label Content="Guardar"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="EliminarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="EliminarButton_Click">
+                <Button x:Name="EliminarButton" Height="70" Width="70"  Margin="15,0" VerticalContentAlignment="Bottom" VerticalAlignment="Top" Click="Eliminarbutton_Click">
                     <StackPanel Orientation="Vertical">
                         <Image Source="/UI/eli.jpg" Stretch="None" />
                         <Label Content="Eliminar"/>
