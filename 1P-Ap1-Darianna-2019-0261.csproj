@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UI\bus.jpg" />
+    <None Remove="UI\eli.jpg" />
+    <None Remove="UI\guar.jpg" />
+    <None Remove="UI\nue.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="5.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -17,7 +24,13 @@
 
   <ItemGroup>
     <Folder Include="DATA\" />
-    <Folder Include="UI\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\bus.jpg" />
+    <Resource Include="UI\eli.jpg" />
+    <Resource Include="UI\guar.jpg" />
+    <Resource Include="UI\nue.jpg" />
   </ItemGroup>
 
   <ItemGroup>
