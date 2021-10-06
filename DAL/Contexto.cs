@@ -14,7 +14,7 @@ namespace _1P_Ap1_Darianna_2019_0261.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"data source = Data\aportescontrol.db");
+            optionsBuilder.UseSqlite(@"data source = DATA\aportescontrol.db");
         }
     }
 }
