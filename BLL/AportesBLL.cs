@@ -115,7 +115,7 @@ namespace _1P_Ap1_Darianna_2019_0261.BLL
             Contexto db = new Contexto();
             try
             {
-                encontrado = db.Aportes.Any(x => x.aporteID == id);
+                encontrado = db.Aportes.Any(x => x.AporteId == id);
             }
             catch (Exception)
             {
@@ -130,7 +130,7 @@ namespace _1P_Ap1_Darianna_2019_0261.BLL
 
         public static bool Guardar(Aportes Aportes)
         {
-            if (!Existe(Aportes.aporteID))
+            if (!Existe(Aportes.AporteId))
                 return Insertar(Aportes);
             else
                 return Modificar(Aportes);

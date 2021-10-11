@@ -10,19 +10,19 @@ namespace _1P_Ap1_Darianna_2019_0261.Entidades
    public  class Aportes
     {
         [Key]
-        public int aporteID { get; set; }
-        public DateTime fecha { get; set; }
-        public String persona { get; set; }
-        public String concepto { get; set; }
-        public float monto { get; set; }
+        public int AporteId { get; set; }
+        public DateTime Fecha { get; set; }
+        public String Persona { get; set; }
+        public String Concepto { get; set; }
+        public float Monto { get; set; }
 
         public Aportes()
         {
-            aporteID = 0;
-            fecha = DateTime.Now;
-            persona = string.Empty;
-            concepto = string.Empty;
-            monto = 0;
+            AporteId = 0;
+            Fecha = DateTime.Now;
+            Persona = string.Empty;
+            Concepto = string.Empty;
+            Monto = 0;
         }
     }
 }

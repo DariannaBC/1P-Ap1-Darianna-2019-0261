@@ -37,11 +37,11 @@ namespace _1P_Ap1_Darianna_2019_0261.UI
                 switch (FiltroComboBox.SelectedIndex)
                 {
                     case 0:
-                        listado = AportesBLL.GetList(j => j.persona.ToLower().Contains(CriterioTextBox.Text.ToLower()));
+                        listado = AportesBLL.GetList(j => j.Persona.ToLower().Contains(CriterioTextBox.Text.ToLower()));
                         break;
 
                     case 1:
-                        listado = AportesBLL.GetList(j => j.concepto.ToLower().Contains(CriterioTextBox.Text.ToLower()));
+                        listado = AportesBLL.GetList(j => j.Concepto.ToLower().Contains(CriterioTextBox.Text.ToLower()));
                         break;
                 }
             }
@@ -51,15 +51,15 @@ namespace _1P_Ap1_Darianna_2019_0261.UI
             }
 
             if (DesdeDataPicker.SelectedDate != null)
-                listado = listado.Where(e => e.fecha.Date >= DesdeDataPicker.SelectedDate).ToList();
+                listado = listado.Where(e => e.Fecha.Date >= DesdeDataPicker.SelectedDate).ToList();
 
             if (HastaDatePicker.SelectedDate != null)
-                listado = listado.Where(e => e.fecha.Date <= HastaDatePicker.SelectedDate).ToList();
+                listado = listado.Where(e => e.Fecha.Date <= HastaDatePicker.SelectedDate).ToList();
 
             DatosDataGrid.ItemsSource = null;
             DatosDataGrid.ItemsSource = listado;
 
-            MontoTextBox.Text = listado.Sum(y => y.monto).ToString();
+            MontoTextBox.Text = listado.Sum(y => y.Monto).ToString();
             ConteoTextBox.Text = listado.Count().ToString();
         }
     }

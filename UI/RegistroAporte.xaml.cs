@@ -95,21 +95,21 @@ namespace _1P_Ap1_Darianna_2019_0261.UI
 
         private void LlenarCampos(Aportes aportes)
         {
-            AportesIDTextBox.Text = aportes.aporteID.ToString();
-            FechaTextBox.SelectedDate = aportes.fecha;
-            PersonaTextBox.Text = aportes.persona;
-            ConceptoTextBox.Text = aportes.concepto;
-            MontoTextBox.Text = aportes.monto.ToString();
+            AportesIDTextBox.Text = aportes.AporteId.ToString();
+            FechaTextBox.SelectedDate = aportes.Fecha;
+            PersonaTextBox.Text = aportes.Persona;
+            ConceptoTextBox.Text = aportes.Concepto;
+            MontoTextBox.Text = aportes.Monto.ToString();
         }
 
         private Aportes LlenarClase()
         {
             Aportes aportes = new Aportes();
-            aportes.aporteID = Utilidades.ToInt(AportesIDTextBox.Text);
-            aportes.fecha = (DateTime)FechaTextBox.SelectedDate;
-            aportes.persona = PersonaTextBox.Text;
-            aportes.concepto = ConceptoTextBox.Text;
-            aportes.monto = Utilidades.ToInt(MontoTextBox.Text);
+            aportes.AporteId = Utilidades.ToInt(AportesIDTextBox.Text);
+            aportes.Fecha = (DateTime)FechaTextBox.SelectedDate;
+            aportes.Persona = PersonaTextBox.Text;
+            aportes.Concepto = ConceptoTextBox.Text;
+            aportes.Monto = Utilidades.ToInt(MontoTextBox.Text);
 
             return aportes;
         }
